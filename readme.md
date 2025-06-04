@@ -42,3 +42,11 @@ As discussed during the last lesson, these are another couple of ways in which T
   - Now go to the sheet, and create a plot and show the top 4 sources of generation. The final plot should look like this. Note here we have used a filter in the sheet to remove the column with discharge.
 
   ![Plot example](https://education-team-2020.s3-eu-west-1.amazonaws.com/data-analytics/6.1-lab_final_plot.png)
+
+## Deliverables
+
+- `main.txt` file with a link to your Tableau Public workbook.
+
+## Submission
+
+Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
