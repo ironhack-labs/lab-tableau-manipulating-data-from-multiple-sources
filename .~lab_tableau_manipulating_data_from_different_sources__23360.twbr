@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Union (nz_water_water_resources)' inline='true' name='federated.017ez3i1c3j5z012ltwkp0nqvluq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nz_water_water_resources' name='pdf.17fm42z1fxm92t17huf711mra6tv'>
+            <connection class='pdf' cleaning='yes' compat='no' dataRefreshTime='' directory='' interpretationMode='257' origfilename='/Users/feepieper/Library/CloudStorage/OneDrive-Persönlich/Ironhack/Module3/labs/lab-tableau-manipulating-data-from-multiple-sources/files_for_lab/nz_water_water_resources.pdf' password='' pgFrom='14' pgTo='14' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2003]' />
+            <value name='[2004]' />
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[1999]' />
+            <value name='[2000]' />
+            <value name='[2001]' />
+            <value name='[2002]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Union].[F10]' />
+              <field name='[Union].[F11]' />
+              <field name='[Union].[F12]' />
+              <field name='[Union].[F13]' />
+              <field name='[Union].[F14]' />
+              <field name='[Union].[F15]' />
+              <field name='[Union].[F16]' />
+              <field name='[Union].[F17]' />
+              <field name='[Union].[F2]' />
+              <field name='[Union].[F3]' />
+              <field name='[Union].[F4]' />
+              <field name='[Union].[F5]' />
+              <field name='[Union].[F6]' />
+              <field name='[Union].[F7]' />
+              <field name='[Union].[F8]' />
+              <field name='[Union].[F9]' />
+            </group>
+          </groups>
+          <relation all='true' name='Union' type='union'>
+            <columns>
+              <column datatype='string' name='F1' />
+              <column datatype='integer' name='F2' />
+              <column datatype='integer' name='F3' />
+              <column datatype='integer' name='F4' />
+              <column datatype='integer' name='F5' />
+              <column datatype='integer' name='F6' />
+              <column datatype='integer' name='F7' />
+              <column datatype='integer' name='F8' />
+              <column datatype='integer' name='F9' />
+              <column datatype='integer' name='F10' />
+              <column datatype='integer' name='F11' />
+              <column datatype='integer' name='F12' />
+              <column datatype='integer' name='F13' />
+              <column datatype='integer' name='F14' />
+              <column datatype='integer' name='F15' />
+              <column datatype='integer' name='F16' />
+              <column datatype='integer' name='F17' />
+              <column datatype='string' name='Inflow s' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.17fm42z1fxm92t17huf711mra6tv' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' outcome='2'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='integer' name='F2' ordinal='1' />
+                <column datatype='integer' name='F3' ordinal='2' />
+                <column datatype='integer' name='F4' ordinal='3' />
+                <column datatype='integer' name='F5' ordinal='4' />
+                <column datatype='integer' name='F6' ordinal='5' />
+                <column datatype='integer' name='F7' ordinal='6' />
+                <column datatype='integer' name='F8' ordinal='7' />
+                <column datatype='integer' name='F9' ordinal='8' />
+                <column datatype='integer' name='F10' ordinal='9' />
+                <column datatype='integer' name='F11' ordinal='10' />
+                <column datatype='integer' name='F12' ordinal='11' />
+                <column datatype='integer' name='F13' ordinal='12' />
+                <column datatype='integer' name='F14' ordinal='13' />
+                <column datatype='integer' name='F15' ordinal='14' />
+                <column datatype='integer' name='F16' ordinal='15' />
+                <column datatype='integer' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+            <relation connection='pdf.17fm42z1fxm92t17huf711mra6tv' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q10:no:A1:Q10:1' header='yes' lost='0' outcome='1' processed='80'>
+                <column datatype='string' name='Inflow s' ordinal='0' />
+                <column datatype='integer' name='F2' ordinal='1' />
+                <column datatype='integer' name='F3' ordinal='2' />
+                <column datatype='integer' name='F4' ordinal='3' />
+                <column datatype='integer' name='F5' ordinal='4' />
+                <column datatype='integer' name='F6' ordinal='5' />
+                <column datatype='integer' name='F7' ordinal='6' />
+                <column datatype='integer' name='F8' ordinal='7' />
+                <column datatype='integer' name='F9' ordinal='8' />
+                <column datatype='integer' name='F10' ordinal='9' />
+                <column datatype='integer' name='F11' ordinal='10' />
+                <column datatype='integer' name='F12' ordinal='11' />
+                <column datatype='integer' name='F13' ordinal='12' />
+                <column datatype='integer' name='F14' ordinal='13' />
+                <column datatype='integer' name='F15' ordinal='14' />
+                <column datatype='integer' name='F16' ordinal='15' />
+                <column datatype='integer' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Union]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflow s</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Inflow s]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Inflow s</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hydro_Label' datatype='string' hidden='true' name='[Calculation_1643813886195585024]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Inflow s] = &quot;hydroelectricity&quot; THEN &quot;Abstraction for hydroelectricity&quot; END' />
+      </column>
+      <column caption='Generation_Label' datatype='string' hidden='true' name='[Calculation_1643813886195748865]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Inflow s] = &quot;hydroelectricity&quot; THEN &quot;Abstraction for hydroelectricity&quot; END' />
+      </column>
+      <column caption='Source' datatype='string' name='[Calculation_1643813886195892226]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([F1]) THEN&#10;    IF NOT ISNULL([Calculation_1643813886195585024]) THEN [Calculation_1643813886195585024]&#10;    ELSEIF NOT ISNULL([Calculation_1643813886195748865]) THEN [Calculation_1643813886195748865]&#10;    ELSE [Inflow s]&#10;    END&#10;ELSE&#10;    [F1]&#10;END' />
+        <aliases>
+          <alias key='&quot;Groundw ater&quot;' value='Groundwater' />
+        </aliases>
+      </column>
+      <column caption='PSA_1' datatype='string' hidden='true' name='[F1]' role='dimension' type='nominal' />
+      <column caption='PSA_2' datatype='string' hidden='true' name='[Inflow s]' role='dimension' type='nominal' />
+      <column caption='Years' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_174CF44DD75C440B9987C4FABF9FEB95]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/4f/3kkpfrvj36l44smm9z3jpzq80000gn/T/tableau-temp/#TableauTemp_01h32tu0l767lm11ymu701vzzgh6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/18/2025 01:17:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflow s</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Inflow s]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflow s</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>193</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_174CF44DD75C440B9987C4FABF9FEB95]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Calculation_1643813886195585024' />
+        <field-sort-custom-order field='Calculation_1643813886195748865' />
+        <field-sort-custom-order field='Calculation_1643813886195892226' />
+        <field-sort-custom-order field='F2' />
+        <field-sort-custom-order field='F3' />
+        <field-sort-custom-order field='F4' />
+        <field-sort-custom-order field='F5' />
+        <field-sort-custom-order field='F6' />
+        <field-sort-custom-order field='F7' />
+        <field-sort-custom-order field='F8' />
+        <field-sort-custom-order field='F9' />
+        <field-sort-custom-order field='F10' />
+        <field-sort-custom-order field='F11' />
+        <field-sort-custom-order field='F12' />
+        <field-sort-custom-order field='F13' />
+        <field-sort-custom-order field='F14' />
+        <field-sort-custom-order field='F15' />
+        <field-sort-custom-order field='F16' />
+        <field-sort-custom-order field='F17' />
+        <field-sort-custom-order field='Inflow s' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <filter class='categorical' column='[Calculation_1643813886195892226]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Abstraction for hydroelectricity&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Evapotranspiration&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Groundw ater&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Ice&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Lakes and reservoirs&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Precipitation&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Snow&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Soil moisture&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;To sea and net abstraction&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Total change in storage&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Total inflow s&quot;' />
+          <groupfilter function='member' level='[Calculation_1643813886195892226]' member='&quot;Total outflow s&quot;' />
+        </groupfilter>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='Union' id='_174CF44DD75C440B9987C4FABF9FEB95'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2003]' />
+                  <value name='[2004]' />
+                  <value name='[2005]' />
+                  <value name='[2006]' />
+                  <value name='[2007]' />
+                  <value name='[2008]' />
+                  <value name='[2009]' />
+                  <value name='[2010]' />
+                  <value name='[1995]' />
+                  <value name='[1996]' />
+                  <value name='[1997]' />
+                  <value name='[1998]' />
+                  <value name='[1999]' />
+                  <value name='[2000]' />
+                  <value name='[2001]' />
+                  <value name='[2002]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Union].[F10]' />
+                    <field name='[Union].[F11]' />
+                    <field name='[Union].[F12]' />
+                    <field name='[Union].[F13]' />
+                    <field name='[Union].[F14]' />
+                    <field name='[Union].[F15]' />
+                    <field name='[Union].[F16]' />
+                    <field name='[Union].[F17]' />
+                    <field name='[Union].[F2]' />
+                    <field name='[Union].[F3]' />
+                    <field name='[Union].[F4]' />
+                    <field name='[Union].[F5]' />
+                    <field name='[Union].[F6]' />
+                    <field name='[Union].[F7]' />
+                    <field name='[Union].[F8]' />
+                    <field name='[Union].[F9]' />
+                  </group>
+                </groups>
+                <relation all='true' name='Union' type='union'>
+                  <columns>
+                    <column datatype='string' name='F1' />
+                    <column datatype='integer' name='F2' />
+                    <column datatype='integer' name='F3' />
+                    <column datatype='integer' name='F4' />
+                    <column datatype='integer' name='F5' />
+                    <column datatype='integer' name='F6' />
+                    <column datatype='integer' name='F7' />
+                    <column datatype='integer' name='F8' />
+                    <column datatype='integer' name='F9' />
+                    <column datatype='integer' name='F10' />
+                    <column datatype='integer' name='F11' />
+                    <column datatype='integer' name='F12' />
+                    <column datatype='integer' name='F13' />
+                    <column datatype='integer' name='F14' />
+                    <column datatype='integer' name='F15' />
+                    <column datatype='integer' name='F16' />
+                    <column datatype='integer' name='F17' />
+                    <column datatype='string' name='Inflow s' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='pdf.17fm42z1fxm92t17huf711mra6tv' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+                    <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' outcome='2'>
+                      <column datatype='string' name='F1' ordinal='0' />
+                      <column datatype='integer' name='F2' ordinal='1' />
+                      <column datatype='integer' name='F3' ordinal='2' />
+                      <column datatype='integer' name='F4' ordinal='3' />
+                      <column datatype='integer' name='F5' ordinal='4' />
+                      <column datatype='integer' name='F6' ordinal='5' />
+                      <column datatype='integer' name='F7' ordinal='6' />
+                      <column datatype='integer' name='F8' ordinal='7' />
+                      <column datatype='integer' name='F9' ordinal='8' />
+                      <column datatype='integer' name='F10' ordinal='9' />
+                      <column datatype='integer' name='F11' ordinal='10' />
+                      <column datatype='integer' name='F12' ordinal='11' />
+                      <column datatype='integer' name='F13' ordinal='12' />
+                      <column datatype='integer' name='F14' ordinal='13' />
+                      <column datatype='integer' name='F15' ordinal='14' />
+                      <column datatype='integer' name='F16' ordinal='15' />
+                      <column datatype='integer' name='F17' ordinal='16' />
+                    </columns>
+                  </relation>
+                  <relation connection='pdf.17fm42z1fxm92t17huf711mra6tv' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+                    <columns gridOrigin='A1:Q10:no:A1:Q10:1' header='yes' lost='0' outcome='1' processed='80'>
+                      <column datatype='string' name='Inflow s' ordinal='0' />
+                      <column datatype='integer' name='F2' ordinal='1' />
+                      <column datatype='integer' name='F3' ordinal='2' />
+                      <column datatype='integer' name='F4' ordinal='3' />
+                      <column datatype='integer' name='F5' ordinal='4' />
+                      <column datatype='integer' name='F6' ordinal='5' />
+                      <column datatype='integer' name='F7' ordinal='6' />
+                      <column datatype='integer' name='F8' ordinal='7' />
+                      <column datatype='integer' name='F9' ordinal='8' />
+                      <column datatype='integer' name='F10' ordinal='9' />
+                      <column datatype='integer' name='F11' ordinal='10' />
+                      <column datatype='integer' name='F12' ordinal='11' />
+                      <column datatype='integer' name='F13' ordinal='12' />
+                      <column datatype='integer' name='F14' ordinal='13' />
+                      <column datatype='integer' name='F15' ordinal='14' />
+                      <column datatype='integer' name='F16' ordinal='15' />
+                      <column datatype='integer' name='F17' ordinal='16' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Union (nz_water_water_resources)' name='federated.017ez3i1c3j5z012ltwkp0nqvluq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.017ez3i1c3j5z012ltwkp0nqvluq'>
+            <column caption='Hydro_Label' datatype='string' hidden='true' name='[Calculation_1643813886195585024]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Inflow s] = &quot;hydroelectricity&quot; THEN &quot;Abstraction for hydroelectricity&quot; END' />
+            </column>
+            <column caption='Generation_Label' datatype='string' hidden='true' name='[Calculation_1643813886195748865]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Inflow s] = &quot;hydroelectricity&quot; THEN &quot;Abstraction for hydroelectricity&quot; END' />
+            </column>
+            <column caption='Source' datatype='string' name='[Calculation_1643813886195892226]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([F1]) THEN&#10;    IF NOT ISNULL([Calculation_1643813886195585024]) THEN [Calculation_1643813886195585024]&#10;    ELSEIF NOT ISNULL([Calculation_1643813886195748865]) THEN [Calculation_1643813886195748865]&#10;    ELSE [Inflow s]&#10;    END&#10;ELSE&#10;    [F1]&#10;END' />
+              <aliases>
+                <alias key='&quot;Groundw ater&quot;' value='Groundwater' />
+              </aliases>
+            </column>
+            <column caption='PSA_1' datatype='string' hidden='true' name='[F1]' role='dimension' type='nominal' />
+            <column caption='PSA_2' datatype='string' hidden='true' name='[Inflow s]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1643813886195892226]' derivation='None' name='[none:Calculation_1643813886195892226:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.017ez3i1c3j5z012ltwkp0nqvluq].[none:Calculation_1643813886195892226:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Abstraction for hydroelectricity&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Evapotranspiration&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Groundw ater&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Ice&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Lakes and reservoirs&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Precipitation&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Snow&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;Soil moisture&quot;' />
+              <groupfilter function='member' level='[none:Calculation_1643813886195892226:nk]' member='&quot;To sea and net abstraction&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.017ez3i1c3j5z012ltwkp0nqvluq].[none:Calculation_1643813886195892226:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.017ez3i1c3j5z012ltwkp0nqvluq].[sum:Pivot Field Values:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.017ez3i1c3j5z012ltwkp0nqvluq].[none:Calculation_1643813886195892226:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.017ez3i1c3j5z012ltwkp0nqvluq].[none:Calculation_1643813886195892226:nk]</rows>
+        <cols>[federated.017ez3i1c3j5z012ltwkp0nqvluq].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{7F8B20A9-B671-4C34-873F-DA56BC859E9A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{952B5AD9-1D01-4F67-90CB-9A70E4833767}' />
+    </window>
+  </windows>
+</workbook>
